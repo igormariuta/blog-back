@@ -1,0 +1,13 @@
+{
+  "name": "blog",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "develop:back": "cd back && npm run develop",
+    "develop:front": "cd front && npm run start",
+    "start": "concurrently \"npm run develop:back\" \"npm run develop:front\""
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}

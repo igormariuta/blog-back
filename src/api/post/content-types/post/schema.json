@@ -43,7 +43,8 @@
       "inversedBy": "posts"
     },
     "rating": {
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "slug": {
       "type": "string"

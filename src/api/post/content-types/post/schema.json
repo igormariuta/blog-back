@@ -19,9 +19,6 @@
     "description": {
       "type": "string"
     },
-    "date": {
-      "type": "datetime"
-    },
     "previewImage": {
       "type": "media",
       "multiple": false,
@@ -53,7 +50,8 @@
       "type": "richtext"
     },
     "tags": {
-      "type": "string"
+      "type": "string",
+      "regex": "(,?[a-zA-Z][a-zA-Z0-9]*,?)"
     }
   }
 }

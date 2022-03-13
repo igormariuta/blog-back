@@ -35,16 +35,17 @@
     },
     "comments": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::comment.comment",
-      "inversedBy": "posts"
+      "mappedBy": "post"
     },
     "rating": {
       "type": "integer",
       "default": 0
     },
     "slug": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "body": {
       "type": "richtext"

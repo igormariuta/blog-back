@@ -15,7 +15,7 @@ module.exports = (plugin) => {
       .findOne({
         where: { username: { $eq: username } },
         populate: [
-          "comments.post",
+          "comments.post.user",
           "followers.avatar",
           "following.avatar",
           "avatar",

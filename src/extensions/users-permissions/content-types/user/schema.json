@@ -96,7 +96,9 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "bookmarks": {
       "type": "relation",
@@ -105,6 +107,9 @@
     },
     "fullName": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
